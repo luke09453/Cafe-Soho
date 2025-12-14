@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Desayunos - Café del Día</title>
+<style>
+  :root{
+    --dark: #3a2e2a;
+    --mid: #7b5844;
+    --tan: #c89f7a;
+    --cream: #f8f4ef;
+    --accent: #d77a2f;
+  }
+  *{box-sizing:border-box;font-family:'Helvetica Neue',Roboto,Arial,sans-serif;}
+  body{margin:0;background-color:var(--cream);color:var(--dark);} 
+  header{
+    background:linear-gradient(180deg,var(--mid),var(--dark));
+    color:var(--cream);
+    text-align:center;
+    padding:40px 20px;
+    background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=60');
+    background-size:cover;
+    background-position:center;
+  }
+  header h1{margin:0;font-size:2.4rem;letter-spacing:2px;text-shadow:0 2px 4px rgba(0,0,0,0.4);} 
+  header p{font-size:1.1rem;margin-top:10px;}
+
+  .menu-section{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+  }
+  .menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+  }
+  .card{
+    background:white;
+    border-radius:16px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+    overflow:hidden;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+  }
+  .card img{
+    width:100%;height:180px;object-fit:cover;
+  }
+  .card-content{padding:18px 20px;}
+  .card-content h2{margin:0 0 10px;font-size:1.2rem;color:var(--mid);} 
+  .card-content ul{margin:0;padding-left:20px;}
+  .card-content li{margin:5px 0;color:var(--dark);} 
+  .price{float:right;color:var(--accent);font-weight:bold;}
+
+  footer{
+    text-align:center;
+    padding:30px;
+    background:var(--mid);
+    color:var(--cream);
+    font-size:0.9rem;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Desayunos</h1>
+    <p>De 8:00 A.M. a 11:00 A.M. — Hechos con el sabor del café recién molido ☕</p>
+  </header>
+
+  <section class="menu-section">
+    <div class="menu-grid">
+
+      <div class="card">
+        <img src="desayuno.png" alt="Paquete desayuno">
+        <div class="card-content">
+          <h2>Paquete <span class="price">$97</span></h2>
+          <ul>
+            <li>Café de olla o té</li>
+            <li>Fruta o pan dulce</li>
+            <li>Jugo</li>
+            <li>Huevo con jamón, salchicha o a la mexicana</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="huevo.png" alt="Huevos al gusto">
+        <div class="card-content">
+          <h2>Huevos al gusto</h2>
+          <ul>
+            <li>Huevo con jamón <span class="price">$55</span></li>
+            <li>Huevo con salchicha <span class="price">$55</span></li>
+            <li>Huevo a la mexicana <span class="price">$55</span></li>
+            <li>Huevos bañados <span class="price">$60</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="chilaquiles.png" alt="Chilaquiles">
+        <div class="card-content">
+          <h2>Chilaquiles <span class="price">$55 - $75</span></h2>
+          <ul>
+            <li>Sencillos $55</li>
+            <li>Con huevo $60</li>
+            <li>Con pollo $68</li>
+            <li>Con res $75</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="molletes.png" alt="Molletes">
+        <div class="card-content">
+          <h2>Molletes <span class="price">$60</span></h2>
+          <ul>
+            <li>2 piezas con frijoles refritos, jamón y manchego</li>
+            <li>Extra chorizo +$10</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cuernitos.png" alt="Cuernitos y Sandwich">
+        <div class="card-content">
+          <h2>Cuernitos y Sándwich</h2>
+          <ul>
+            <li>Jamón con queso <span class="price">$45</span></li>
+            <li>Pollo con queso <span class="price">$50</span></li>
+            <li>Ensalada de atún <span class="price">$50</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="ensaladas.png" alt="Ensaladas">
+        <div class="card-content">
+          <h2>Ensaladas <span class="price">$90</span></h2>
+          <p>Preparada con lechuga, pepino, fruta de temporada, semillas, frutos secos, queso y proteína a escoger:</p>
+          <ul>
+            <li>Pollo</li>
+            <li>Res</li>
+            <li>Atún</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="sincronizadas.png" alt="Sincronizadas">
+        <div class="card-content">
+          <h2>Sincronizadas <span class="price">$55</span></h2>
+          <p>Orden con 2 piezas rellenas de queso manchego y jamón, acompañadas de pico de gallo.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="coctel.png" alt="Cóctel de frutas">
+        <div class="card-content">
+          <h2>Cóctel de frutas <span class="price">$60</span></h2>
+          <p>Mezcla de frutas de temporada acompañada de miel, granola, chantilly o yogurt.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SoHo — Un estilo de vida
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+body{
+    background-color: #7e644b;
+    
+}
+a{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+table{
+    margin: 0 auto;
+    border-spacing: 60px 10px;
+}
+td a{
+    text-decoration: none;
+    color: var(--cream);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: white;
+}
