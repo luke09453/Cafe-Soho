@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bebidas</title>
+<style>
+  :root{
+    --dark: #3a2e2a;
+    --mid: #7b5844;
+    --tan: #c89f7a;
+    --cream: #f8f4ef;
+    --accent: #d77a2f;
+  }
+  *{box-sizing:border-box;font-family:'Helvetica Neue',Roboto,Arial,sans-serif;}
+  body{margin:0;background-color:var(--cream);color:var(--dark);} 
+  header{
+    background:linear-gradient(180deg,var(--mid),var(--dark));
+    color:var(--cream);
+    text-align:center;
+    padding:40px 20px;
+    background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=60');
+    background-size:cover;
+    background-position:center;
+  }
+  header h1{margin:0;font-size:2.4rem;letter-spacing:2px;text-shadow:0 2px 4px rgba(0,0,0,0.4);} 
+  header p{font-size:1.1rem;margin-top:10px;}
+
+  .menu-section{
+    max-width:1100px;
+    margin:40px auto;
+    padding:20px;
+  }
+  .menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:24px;
+  }
+  .card{
+    background:white;
+    border-radius:16px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.08);
+    overflow:hidden;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+  }
+  .card img{
+    width:100%;height:180px;object-fit:cover;
+  }
+  .card-content{padding:18px 20px;}
+  .card-content h2{margin:0 0 10px;font-size:1.2rem;color:var(--mid);} 
+  .card-content ul{margin:0;padding-left:20px;}
+  .card-content li{margin:5px 0;color:var(--dark);} 
+  .price{float:right;color:var(--accent);font-weight:bold;}
+
+  footer{
+    text-align:center;
+    padding:30px;
+    background:var(--mid);
+    color:var(--cream);
+    font-size:0.9rem;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Bebidas</h1>
+    <p>El sabor que despierta tus dias</p>
+  </header>
+
+  <section class="menu-section">
+    <div class="menu-grid">
+
+      <div class="card"> 
+        <img src="cafe.png" alt="cafe">
+        <div class="card-content">
+          <h3>Bebidas Calientes</h3>  
+          <ul>  
+            <li>Americano <span class="price">$35 / $48</span></li>  
+            <li>Espresso <span class="price">$20</span></li>  
+            <li>Café de olla <span class="price">$35</span></li>  
+            <li>Chocolate caliente <span class="price">$45</span></li>  
+            <li>Capuchino clásico <span class="price">$40 / $53</span></li>  
+            <li>Latte clásico <span class="price">$40 / $53</span></li>  
+            <li>Jarabes: Vainilla, moka, crema irlandesa <span class="price">+$10</span></li>  
+
+      <li>Carga extra <span class="price">+$10</span></li>  
+            <li>Leche deslactosada <span class="price">+$5</span></li>  
+          </ul>  
+        </div>  
+      </div>  
+
+      <div class="card">  
+        <img src="te.png" alt="te">
+        <div class="card-content">  
+          <h3>Té</h3>  
+          <ul>  
+          <p>Caliente <span class="price">$25</span></p>
+          <p>Frío <span class="price">$35</span></p>  
+            <li>Manzanilla</li>  
+            <li>Verde</li>  
+            <li>Frutos rojos</li>  
+            <li>Mango-fresa</li>  
+          </ul>  
+      </div>  
+      </div>  
+
+      <div class="card">  
+        <img src="tizana.png" alt="tizana">
+        <div class="card-content">  
+          <h3>Tizanas</h3>  
+          <ul>  
+            <li>Caliente <span class="price">$45</span></li>  
+            <li>Fría <span class="price">$55</span></li>  
+            <li>Infusión de frutas deshidratadas</li>  
+            <li>Mezcla de sabores</li>  
+          </ul>  
+        </div>  
+      </div>  
+
+      
+      <div class="card">
+      <img src="frapee.png" alt="frappé">  
+      <div class="card-content">  
+        <h3>Frapeé <span class="price">$70</span></h3>  
+        <p>Todos a excepcion del sabor chocolate son a base de café.</p>
+        <ul>  
+          <li>Clasico</li>  
+          <li>Vainilla</li>  
+          <li>Moka</li>  
+          <li>Crema irlandesa</li>  
+          <li>Chocolate</li>
+          <li>Oreo<span class="price">+$75</span></li>  
+          <li>Leche deslactosada<span class="price">+$5</span></li>  
+        </ul>  
+      </div>  
+      </div>  
+
+      <div class="card">  
+        <img src="italiana.png" alt="Soda Italiana">
+        <div class="card-content">  
+          <h3>Soda Italiana</h3>  
+          <p>Agua mineral+Jellys+Jarabe de tu eleccion:</p>
+          <ul>  
+            <li>Mora azul</li>  
+            <li>Frutos Rojos</li>  
+            <li>Maracuyá</li>
+          </ul>  
+      </div>  
+      </div>  
+
+        <div class="card">
+        <img src="licuados.png" alt="licuados">  
+        <div class="card-content">  
+          <h3>Licuados <span class="price">$32</span></h3>  
+          <ul>  
+            <li>Fresa</li>  
+            <li>Plátano</li>  
+            <li>Chocolate</li>  
+            <li>Nuez</li>  
+            <li>Avena</li>  
+            <li>Ingrediente extra <span class="price">+$5</span></li>  
+          </ul>  
+        </div>  
+      </div>  
+
+        <div class="card">
+        <img src="refrescos.png" alt="extras">  
+        <div class="card-content">  
+          <h3>Extras</h3>  
+          <ul>  
+            <li>Agua Frutal</li>
+            <p>litro<span class="price">$45</span></p>  
+            <p>medio<span class="price">$25</span></p>  
+            <li>Naranjada Mineral<span class="price">$50</span></p></li>  
+            <li>Agua Embotellada</li>
+            <p>litro<span class="price">$19</span></p>  
+            <p>medio<span class="price">$16</span></p> 
+            <li>Coca-Cola 350ml.<span class="price">$30</span></p></li> 
+            <li>Coca-Cola s/a 350ml.<span class="price">$0</span></p></li> 
+            <li>Mundet 355ml.<span class="price">$30</span></p></li> 
+            <li>Sprite <span class="price">$30</span></p></li> 
+            <li>Naranjada Mineral 355ml.<span class="price">$30</span></p></li> 
+        </div>  
+      </div>        
+    </div>  
+  </section>  
+
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SoHo — Un estilo de vida
+  </footer>
+</body>
+</html>
